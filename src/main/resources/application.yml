@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server-client
+  profiles:
+    active: development
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:\\_INTELLIJ\\springboot-template\\configuration-service\\config_file
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka/
+
+server:
+  port: 8094
